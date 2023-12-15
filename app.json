@@ -10,7 +10,7 @@
 	],
 	"repository": "https://github.com/Source-Ze/Temp-Mail",
     "env": {
-        "see": {
+        "SessionTelethon": {
             "description": "Your SessionTelethon ",
             "value": ""
         },
