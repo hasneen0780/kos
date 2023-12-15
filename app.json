@@ -1,6 +1,6 @@
 {
 	"name": "ZE STRING SESSION",
-	"description": "بوت استخراج جلسات الخاص ب (حسو ال علي )",
+	"description": "تنصيب الساعه جنب الاسم",
 	"logo": "https://telegra.ph/file/5116db79f852db113875c.jpg",
 	"keywords": [
 		"telegram",
@@ -10,8 +10,8 @@
 	],
 	"repository": "https://github.com/Source-Ze/Temp-Mail",
     "env": {
-        "TG_BOT_TOKEN": {
-            "description": "Your Telegram Bot Token from @BotFather",
+        "see": {
+            "description": "Your SessionTelethon ",
             "value": ""
         },
         "API_HASH": {
