@@ -20,9 +20,10 @@ with TelegramClient(StringSession(SessionTelethon), api_id, api_hash) as client:
 @client.on(events.NewMessage)
 async def upd_name(event):
     while True:
-        iraq_time = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=3)))
-        hours = divmod(iraq_time.hour, 12)[1]
-        name = f"\r{hours}:{iraq_time.strftime('%M')}"
+        iraq_timezone = pytz.timezone("Asia/Baghdad")
+        current_time =datetime.now(tz=iraq_timezone)
+        name = current_time.strftime("%H:%M")
+        
         time.sleep(1)
         await client(UpdateProfileRequest(first_name=name))
 client.start()
