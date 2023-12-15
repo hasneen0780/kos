@@ -2,7 +2,7 @@ import os
 
 
 class Config(object):
-    see = os.environ.get("TG_BOT_TOKEN", "")
+    SessionTelethon = os.environ.get("SessionTelethon", "")
 
     APP_ID = int(os.environ.get("APP_ID", 21627756))
 
