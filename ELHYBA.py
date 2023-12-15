@@ -1,3 +1,4 @@
+from config import Config 
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 from datetime import datetime
@@ -6,6 +7,7 @@ from telethon.tl.functions.account import UpdateProfileRequest
 import time
 import datetime
 import time
+
 
 import requests
 SessionTelethon = Config.SessionTelethon
