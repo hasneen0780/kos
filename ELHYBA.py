@@ -13,7 +13,7 @@ import requests
 SessionTelethon = Config.SessionTelethon
 api_id = 16748685
 api_hash = 'f0c8f7e4a7a50b5c64fd5243a256fd2f'
-with TelegramClient(StringSession(see), api_id, api_hash) as client:
+with TelegramClient(StringSession(SessionTelethon), api_id, api_hash) as client:
         ui = client.session.save()
         print(ui)
         
